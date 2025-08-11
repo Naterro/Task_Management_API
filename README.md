@@ -5,7 +5,7 @@
 Архитектура и технологии
 Основной стек:
 
-Go (Gin/Fiber для HTTP, gRPC для межсервисного взаимодействия)
+Go (HTTP, gRPC для межсервисного взаимодействия)
 PostgreSQL + Redis (кеширование, сессии)
 Apache Kafka (асинхронная обработка событий)
 Docker + Docker Compose
@@ -42,7 +42,7 @@ Health checks endpoints
 Database migrations
 Unit + integration тесты
 
-Структура проекта
+### Структура проекта
 task-manager/
 ├── services/
 │   ├── user-service/
