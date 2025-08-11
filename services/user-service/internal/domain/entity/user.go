@@ -3,15 +3,16 @@ package entity
 import "time"
 
 type User struct {
-	Id       int
-	Login    string
-	Email    string
-	PassHash string
-	Created  time.Time
+	Id              int
+	Login           string
+	Email           string
+	passHashHex     string
+	PrivilegesLevel int
+	Created         time.Time
 }
 
-func (u *User) CheckPass(passHash string) bool {
-	if u.PassHash == passHash {
+func (u *User) CheckPass(passHashHex string) bool {
+	if u.passHashHex == passHashHex {
 		return true
 	}
 	return false
